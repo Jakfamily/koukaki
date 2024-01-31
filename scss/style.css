@@ -526,4 +526,20 @@
   .oscar__nomination-text {
     font-size: 110%;
   }
+}
+.story #place {
+  background-image: url("http://localhost/koukaki/wp-content/themes/foce/assets/images/Studio_Koukaki-image_place.png");
+}
+
+#NuagesBleu {
+  margin-top: -25%;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  position: absolute;
+}
+
+@media (max-width: 800px) {
+  #NuagesBleu {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

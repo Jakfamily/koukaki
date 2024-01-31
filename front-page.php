@@ -39,7 +39,7 @@ get_header();
             </div>
 
             <div>
-                <img id="NuagesBleu" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/nuages-bleu.png'; ?> " alt="Nuages Bleu">
+                <img id="NuagesBleu" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/nuage-bleu.png'; ?> " alt="Nuages Bleu">
             </div>
 
         </article>

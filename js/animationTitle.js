@@ -1,5 +1,5 @@
 console.log(
-  "hello la terre le script animationTitle.js est lancé depuis la lune !"
+  "hello la terre le script animationTitle.js en dirrect de la lune !"
 );
 
 const observer = new IntersectionObserver((entries) => {
