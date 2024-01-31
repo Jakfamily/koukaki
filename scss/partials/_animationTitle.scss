@@ -1,0 +1,25 @@
+@import "../utils/mixinsFadeIn";
+
+
+$titleSpeed: 2s;
+
+
+.Animetitre,
+.Animetitre2 {
+	opacity: 0 ;
+	}
+
+.animateTitle,
+.animateTitle2 {
+	display:inline-block;
+	position: relative;
+	opacity: 1;
+	}
+
+.animateTitle {
+  @include keyFrames(-100px, fadeInUp, 100%, $titleSpeed)
+}
+
+.animateTitle2 {
+  @include keyFrames(100px, fadeInDown, 200%, $titleSpeed)
+}

@@ -1,0 +1,54 @@
+@import '../utils/mixinsRotationFlowers';
+
+
+$speedFlower: 2s;
+
+.site-footer {
+  &::before, &::after {
+    content: "";
+  }
+
+  ul::after,
+  ::before,
+  ::after {
+    @include rotationFleurs($speedFlower);
+  }
+}
+
+.story__article::after,
+.story h2::after {
+  @include rotationFleurs($speedFlower);
+}
+
+.story h2::after {
+  transform-origin: 77px 77px;
+}
+
+// #fleurMenuSunFlower,
+// #fleurMenuOrchid,
+// #fleurMenuRandom,
+// #fleurMenuFlower,
+// #fleurMenuHibiscus {
+//   @include rotationFleurs(4s);
+// }
+
+#studio {
+  h2 {
+    &::before, &::after {
+      @include rotationFleurs($speedFlower);
+    }
+
+    &::before {
+      transform-origin: 101.5px 99.5px;
+    }
+
+    &::after {
+      transform-origin: 54px 53px;
+    }
+  }
+}
+
+.oscar::before,
+.oscar::after {
+  @include rotationFleurs($speedFlower);
+}

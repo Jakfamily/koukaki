@@ -1,0 +1,14 @@
+@mixin keyFrames($height, $keyFrameName, $percentage, $speed: 2s) {
+  @keyframes #{$keyFrameName} {
+    0% {
+      transform: translateY($height);
+      opacity: 0;
+    }
+
+    #{$percentage} {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  animation: $keyFrameName $speed;
+}

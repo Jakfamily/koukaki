@@ -1,0 +1,38 @@
+@import "../utils/mixinsFadeIn";
+
+.banner__video {
+  @include keyFrames(-200px, AnimationToDown, 100%);
+}
+
+.banner__video-fallback {
+  @include keyFrames(200px, AnimationToUp, 100%);
+}
+
+.banner__parallaxe-logo {
+  @include keyFrames(200px, animationToUp, 100%);
+}
+
+.story {
+  @include keyFrames(200px, AnimationToUp, 100%);
+}
+
+.story__article p, .story__place p {
+  @include keyFrames(-200px, AnimationToDown, 100%);
+}
+
+#studio {
+  @include keyFrames(200px, AnimationToUp, 100%);
+}
+
+#studio div p {
+  @include keyFrames(-200px, AnimationToDown, 100%);
+}
+
+.oscar {
+  @include keyFrames(200px, AnimationToUp, 100%);
+}
+
+
+.site-footer {
+  @include keyFrames(200px, AnimationToUp, 100%);
+}
