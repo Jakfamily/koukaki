@@ -1,10 +1,10 @@
 <?php
 $args = array(
-	'post_type' => 'characters',
+	'post_type'      => 'characters',
 	'posts_per_page' => -1,
-	'meta_key'  => '_main_char_field',
-	'orderby'   => 'meta_value_num',
-
+	'meta_key'       => '_main_char_field',
+	'orderby'        => 'meta_value_num',
+	'order'          => 'ASC',
 );
 $characters_query = new WP_Query($args);
 ?>

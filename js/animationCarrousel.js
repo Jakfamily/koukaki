@@ -1,4 +1,4 @@
-console.log("hello la terre animationCarrousel.js en direct de la lune !");
+console.log("allo la terre animationCarrousel.js en direct de la lune !");
 
 const swiper = new Swiper(".swiper", {
   effect: "coverflow",

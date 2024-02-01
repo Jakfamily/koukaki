@@ -3,7 +3,7 @@ https://developer.mozilla.org/fr/docs/Web/API/Intersection_Observer_API
 */
 
 console.log(
-  "hello la terre le script animationTitle.js en dirrect de la lune !"
+  "allo la terre le script animationTitle.js en dirrect de la lune !"
 );
 
 const observer = new IntersectionObserver((entries) => {

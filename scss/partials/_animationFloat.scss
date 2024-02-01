@@ -1,1 +1,6 @@
 @import "../utils/mixinsFloat";
+
+
+.float {
+  @include floatLogo;
+}

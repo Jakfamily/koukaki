@@ -1,15 +1,11 @@
-.banner img {
-  margin-top: unset !important;
-  padding-bottom: 10%;
-}
-
 .banner {
   background-image: none;
   position: relative;
   align-items: unset;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  & img {
+    margin-top: unset;
+  }
 
   &__video-fallback {
     position: absolute;
@@ -21,10 +17,17 @@
   &__parallaxe-logo {
     width: 50% !important;
     z-index: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    top: 120px;
+    margin-left: 120px;
+
+    @media (max-width: 700px) {
+      position: absolute;
+      top: 50px;
+      left: 100px;
+      width: 80% !important;
+      z-index: -1;
+    }
   }
 
   &__video {
@@ -44,14 +47,6 @@
   @media (max-width: 700px) {
     &__parallaxe {
       left: 0px;
-    }
-
-    &__parallaxe-logo {
-      position: absolute;
-      top: 50px;
-      left: 100px;
-      width: 80% !important;
-      z-index: -1;
     }
   }
 }

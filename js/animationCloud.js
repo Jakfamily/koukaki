@@ -1,5 +1,7 @@
-const NuagesBleu = document.getElementById("NuagesBleu"); //selectionne l'élément html avec l'id NuagesBleu
-const NuagesBleuVitesse = 0.3; //vitesse de déplacement du nuage
+console.log("allo la terre le script animationCloud.js en direct de la lune !");
+
+const NuagesBleu = document.getElementById("NuagesBleu");
+const NuagesBleuVitesse = 0.3;
 const NuagesBleuPosition = window.innerHeight / 2 - 40; //position du nuage
 
 function scrollNuage() {

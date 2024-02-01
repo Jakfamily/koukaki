@@ -347,6 +347,47 @@
   }
 }
 
+.float {
+  -webkit-animation: floatLogo 3s linear infinite;
+          animation: floatLogo 3s linear infinite;
+}
+@-webkit-keyframes floatLogo {
+  0%, 50%, 100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  20% {
+    -webkit-transform: translate(70px, -20px);
+            transform: translate(70px, -20px);
+  }
+  40% {
+    -webkit-transform: translate(20px, -30px);
+            transform: translate(20px, -30px);
+  }
+  80% {
+    -webkit-transform: translate(30px, -40px);
+            transform: translate(30px, -40px);
+  }
+}
+@keyframes floatLogo {
+  0%, 50%, 100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  20% {
+    -webkit-transform: translate(70px, -20px);
+            transform: translate(70px, -20px);
+  }
+  40% {
+    -webkit-transform: translate(20px, -30px);
+            transform: translate(20px, -30px);
+  }
+  80% {
+    -webkit-transform: translate(30px, -40px);
+            transform: translate(30px, -40px);
+  }
+}
+
 .swiper {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -354,15 +395,13 @@
   width: 100%;
   max-width: 100%;
 }
-
-.swiper-slide {
+.swiper__slide {
   background-position: center;
   background-size: cover;
   margin-right: 40px;
   margin-left: 40px;
 }
-
-.swiper-slide img {
+.swiper__slide img {
   display: block;
   max-width: 380px;
 }
@@ -376,35 +415,25 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
-#titreh3 {
+#characters__titreh3 {
   width: 70%;
 }
-
 @media (max-width: 1000px) {
-  #characters {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  #titreh3 {
+  #characters__titreh3 {
     width: 100%;
   }
 }
 @media (max-width: 700px) {
-  #titreh3 {
+  #characters__titreh3 {
     width: 105%;
   }
 }
 @media (max-width: 550px) {
-  #titreh3 {
+  #characters__titreh3 {
     width: 104%;
   }
 }
+
 .banner img {
   margin-top: unset !important;
   padding-bottom: 10%;
@@ -535,7 +564,6 @@
   margin-top: -25%;
   -webkit-filter: blur(10px);
           filter: blur(10px);
-  position: absolute;
 }
 
 @media (max-width: 800px) {
