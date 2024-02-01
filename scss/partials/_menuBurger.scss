@@ -1,0 +1,228 @@
+/* CSS pour le menu burger */
+
+$background-color: black;
+
+.MenuFull {
+  background-color: #fff5e9;
+  opacity: 0;
+  transition: opacity 0.5s ease-in, height 0.5s ease-in;
+
+  &.nav_open {
+    opacity: 1;
+    height: 100vh;
+
+    visibility: visible;
+    display: block;
+    transition: opacity 0.5s ease-in, height 0.5s ease-in;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+.boutonMenu {
+  width: 42px;
+  height: 24px;
+  cursor: pointer;
+  position: relative;
+  float: right;
+  margin-top: 30px;
+  margin-right: 120px;
+
+  span {
+    width: 100%;
+    height: 1px;
+    background-color: $background-color;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.5s ease-in-out;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: $background-color;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    &::after {
+      transform: translateY(10px);
+    }
+    &::before {
+      transform: translateY(-10px);
+    }
+  }
+
+  &.active {
+    span {
+      background-color: transparent;
+      &::before {
+        transform: translateY(0px) rotateZ(45deg);
+      }
+      &::after {
+        transform: translateY(0px) rotateZ(-45deg);
+      }
+    }
+  }
+}
+
+.menu-items {
+  display: none;
+  background-color: #fff5e9;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 70px;
+  }
+}
+
+.liste {
+  ul {
+    text-align: center;
+    height: 57%;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    text-align: center;
+  }
+
+  li a {
+    text-decoration: none !important;
+    list-style-type: none !important;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 104px;
+    // mise en place de l'ombre portée
+    &:hover {
+      filter: drop-shadow(0px 0px 10px #d35d19);
+      -webkit-filter: drop;
+    }
+  }
+
+  img {
+    margin: auto;
+    display: flex;
+  }
+}
+
+.menuParagraphe {
+  text-align: center;
+  font-size: 25px !important;
+  padding-top: 100px !important;
+}
+
+// Images dans le menu-Burger
+/* Images du Menu deplier en mode Full */
+
+#catMenuBleu,
+#catMenuBlack,
+#catMenuOrange,
+#fleurMenuSunFlower,
+#fleurMenuOrchid,
+#fleurMenuHibiscus,
+#fleurMenuRandom,
+#fleurMenuFlower {
+  position: absolute;
+}
+
+.logoMenu {
+  width: 200px;
+}
+
+#catMenuBleu {
+  top: 260px;
+  left: 280px;
+  width: 120px;
+  height: 105px;
+}
+
+#catMenuBlack {
+  top: 480px;
+  right: 210px;
+  width: 120px;
+  height: 105px;
+}
+
+#catMenuOrange {
+  bottom: 240px;
+  left: 80px;
+  width: 93px;
+  height: 84px;
+}
+
+#fleurMenuSunFlower {
+  top: 215px;
+  right: 210px;
+  animation: RotationInfinis 5s linear infinite;
+}
+
+#fleurMenuOrchid {
+  top: 117px;
+  left: -54px;
+  animation: RotationInfinis 5s linear infinite;
+}
+
+#fleurMenuHibiscus {
+  bottom: -120px;
+  right: -240px;
+  width: 30%;
+  animation: RotationInfinis 5s linear infinite;
+}
+
+#fleurMenuRandom {
+  top: 400px;
+  right: -80px;
+  width: 5%;
+  animation: RotationInfinis 5s linear infinite;
+}
+
+#fleurMenuFlower {
+  bottom: 480px;
+  left: 230px;
+  width: 80px;
+  height: 80px;
+  animation: RotationInfinis 5s linear infinite;
+}
+
+// Animation Flottement des chats
+#catMenuBlack,
+#catMenuOrange,
+#catMenuBleu {
+  animation: flottementChat 3s infinite alternate;
+}
+
+// media querie images
+@media (max-width: 1100px) {
+  #catMenuBlack,
+  #fleurMenuFlower,
+  #fleurMenuHibiscus,
+  #fleurMenuSunFlower {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  #catMenuBleu,
+  #catMenuOrange,
+  #fleurMenuOrchid,
+  #fleurMenuRandom {
+    display: none;
+  }
+}
+
+//media querie pour le menu
+@media screen and (min-width: 150px) {
+  .main-navigation {
+    height: 80px;
+  }
+  .main-navigation ul {
+    display: flex;
+  }
+}

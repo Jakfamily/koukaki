@@ -19,7 +19,7 @@ const effetParallaxe = document.querySelector(".banner__parallaxe");
 
 window.addEventListener("scroll", () => {
   const scrollenY = window.scrollY;
-  const maxTranslationY = 250;
+  const maxTranslationY = 200;
   if (scrollenY <= maxTranslationY) {
     effetParallaxe.style.transform = `translateY(${scrollenY}px)`;
   }

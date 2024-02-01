@@ -1,10 +1,10 @@
-@import '../utils/mixinsRotationFlowers';
-
+@import "../utils/mixinsRotationFlowers";
 
 $speedFlower: 5s;
 
 .site-footer {
-  &::before, &::after {
+  &::before,
+  &::after {
     content: "";
   }
 
@@ -24,17 +24,18 @@ $speedFlower: 5s;
   transform-origin: 77px 77px;
 }
 
-// #fleurMenuSunFlower,
-// #fleurMenuOrchid,
-// #fleurMenuRandom,
-// #fleurMenuFlower,
-// #fleurMenuHibiscus {
-//   @include rotationFleurs(4s);
-// }
+#fleurMenuSunFlower,
+#fleurMenuOrchid,
+#fleurMenuHibiscus,
+#fleurMenuRandom,
+#fleurMenuFlower {
+  @include rotationFleurs($speedFlower);
+}
 
 #studio {
   h2 {
-    &::before, &::after {
+    &::before,
+    &::after {
       @include rotationFleurs($speedFlower);
     }
 
