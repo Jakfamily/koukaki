@@ -15,11 +15,12 @@
   }
 
   &__parallaxe-logo {
-    width: 50% !important;
+    width: 80% !important;
     z-index: 1;
     position: relative;
     top: 120px;
     margin-left: 120px;
+    margin-top: 10px !important;
 
     @media (max-width: 700px) {
       position: absolute;

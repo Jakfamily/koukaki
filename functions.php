@@ -17,10 +17,11 @@ function swiper() {
 add_action('wp_enqueue_scripts', 'customScripts');
 
 function customScripts() {
-    wp_enqueue_script("animationTitle", get_stylesheet_directory_uri() . '/js/animationTitle.js', array('jquery'), '1.0.0', true);
-    wp_enqueue_script("animationcarrousel", get_stylesheet_directory_uri() . '/js/animationCarrousel.js', array('jquery'), '1.0.0', true);
-    wp_enqueue_script("animationCloud", get_stylesheet_directory_uri()."/js/animationCloud.js",  array('jquery'), '1.0.0', true);
-    wp_enqueue_script("animationFloat", get_stylesheet_directory_uri()."/js/animationFloat.js", array('jquery'), '1.0.0', true);
+    wp_enqueue_script("animationTitle", get_stylesheet_directory_uri() . '/js/animationTitle.js', array(), '1.0.0', true);
+    wp_enqueue_script("animationcarrousel", get_stylesheet_directory_uri() . '/js/animationCarrousel.js', array(), '1.0.0', true);
+    wp_enqueue_script("animationCloud", get_stylesheet_directory_uri()."/js/animationCloud.js",  array(), '1.0.0', true);
+    wp_enqueue_script("animationFloat", get_stylesheet_directory_uri()."/js/animationFloat.js", array(), '1.0.0', true);
+    wp_enqueue_script("animationParallaxe", get_stylesheet_directory_uri()."/js/animationParallaxe.js", array(), '1.0.0', true);
 }
 
 
