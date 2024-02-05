@@ -1,0 +1,9 @@
+@import '../utils/mixinsFloatCat';
+
+.menu-items .menu-items__container {
+  #catMenuBleu,
+  #catMenuOrange,
+  #catMenuBlack {
+    @include floatCat;
+  }
+}

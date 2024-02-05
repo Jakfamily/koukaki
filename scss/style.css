@@ -187,6 +187,33 @@
   }
 }
 
+.menu-items .menu-items__container #catMenuBleu,
+.menu-items .menu-items__container #catMenuOrange,
+.menu-items .menu-items__container #catMenuBlack {
+  -webkit-animation: floatCat 3s linear infinite;
+          animation: floatCat 3s linear infinite;
+}
+@-webkit-keyframes floatCat {
+  0%, 100% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+@keyframes floatCat {
+  0%, 100% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
 .float {
   -webkit-animation: floatLogo 3s linear infinite;
           animation: floatLogo 3s linear infinite;
@@ -279,11 +306,11 @@
           transform-origin: 77px 77px;
 }
 
-#fleurMenuSunFlower,
-#fleurMenuOrchid,
-#fleurMenuHibiscus,
-#fleurMenuRandom,
-#fleurMenuFlower {
+.menu-items .menu-items__container #fleurMenuSunFlower,
+.menu-items .menu-items__container #fleurMenuOrchid,
+.menu-items .menu-items__container #fleurMenuHibiscus,
+.menu-items .menu-items__container #fleurMenuRandom,
+.menu-items .menu-items__container #fleurMenuFlower {
   -webkit-animation: RotationFleurs 5s linear infinite;
           animation: RotationFleurs 5s linear infinite;
 }
@@ -422,6 +449,7 @@
   width: 100% !important;
   z-index: -2;
   margin-top: 0px !important;
+  display: block;
 }
 .banner__parallaxe-logo {
   width: 80% !important;
@@ -435,9 +463,10 @@
   .banner__parallaxe-logo {
     position: absolute;
     top: 50px;
-    left: 100px;
-    width: 80% !important;
+    left: 50%;
+    width: 40% !important;
     z-index: -1;
+    margin-left: -20%;
   }
 }
 .banner__video {
@@ -452,7 +481,7 @@
 }
 @media (max-width: 700px) {
   .banner__video {
-    display: none;
+    display: block !important;
   }
 }
 @media (max-width: 700px) {

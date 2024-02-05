@@ -24,12 +24,14 @@ $speedFlower: 5s;
   transform-origin: 77px 77px;
 }
 
+.menu-items .menu-items__container {
 #fleurMenuSunFlower,
 #fleurMenuOrchid,
 #fleurMenuHibiscus,
 #fleurMenuRandom,
 #fleurMenuFlower {
   @include rotationFleurs($speedFlower);
+}
 }
 
 #studio {

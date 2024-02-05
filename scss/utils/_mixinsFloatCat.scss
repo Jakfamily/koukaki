@@ -1,0 +1,12 @@
+@mixin floatCat($duration: 3s) {
+  @keyframes floatCat {
+    0%, 100% {
+      transform: translateY(-10px);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
+
+  animation: floatCat $duration linear infinite;
+}

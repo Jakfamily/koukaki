@@ -37,7 +37,7 @@
                         <li><a href="#story"><span class="Animetitre">Histoire</span></a></li>
                         <li><a href="#characters"><span class="Animetitre">Personnages</span></a></li>
                         <li><a href="#place"><span class="Animetitre">Lieu</span></a></li>
-                        <li><a href="#studio"><span class="Animetitre">Studio</span><span class="Animetitre2">KOUKAKI</span></a></li>
+                        <li><a href="#studio"><KOUKAKI class="Animetitre">Studio KOUKAKI</a></li>
                     </ul>
                     <p class="menuParagraphe">STUDIO KOUKAKI</p>
                 </div>
