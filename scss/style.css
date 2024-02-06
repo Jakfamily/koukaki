@@ -670,7 +670,6 @@
 .menuParagraphe {
   text-align: center;
   font-size: 25px !important;
-  padding-top: 100px !important;
 }
 
 /* Images du Menu deplier en mode Full */
@@ -728,7 +727,7 @@
 
 #fleurMenuRandom {
   top: 400px;
-  right: -80px;
+  right: -40px;
   width: 5%;
 }
 
