@@ -713,31 +713,23 @@
 #fleurMenuSunFlower {
   top: 215px;
   right: 210px;
-  -webkit-animation: RotationInfinis 5s linear infinite;
-          animation: RotationInfinis 5s linear infinite;
 }
 
 #fleurMenuOrchid {
   top: 117px;
   left: -54px;
-  -webkit-animation: RotationInfinis 5s linear infinite;
-          animation: RotationInfinis 5s linear infinite;
 }
 
 #fleurMenuHibiscus {
   bottom: -120px;
   right: -240px;
   width: 30%;
-  -webkit-animation: RotationInfinis 5s linear infinite;
-          animation: RotationInfinis 5s linear infinite;
 }
 
 #fleurMenuRandom {
   top: 400px;
   right: -80px;
   width: 5%;
-  -webkit-animation: RotationInfinis 5s linear infinite;
-          animation: RotationInfinis 5s linear infinite;
 }
 
 #fleurMenuFlower {
@@ -745,15 +737,6 @@
   left: 230px;
   width: 80px;
   height: 80px;
-  -webkit-animation: RotationInfinis 5s linear infinite;
-          animation: RotationInfinis 5s linear infinite;
-}
-
-#catMenuBlack,
-#catMenuOrange,
-#catMenuBleu {
-  -webkit-animation: flottementChat 3s infinite alternate;
-          animation: flottementChat 3s infinite alternate;
 }
 
 @media (max-width: 1100px) {

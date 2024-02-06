@@ -115,7 +115,6 @@ $background-color: black;
 .menuParagraphe {
   text-align: center;
   font-size: 25px !important;
-  padding-top: 100px !important;
 }
 
 // Images dans le menu-Burger
@@ -160,27 +159,23 @@ $background-color: black;
 #fleurMenuSunFlower {
   top: 215px;
   right: 210px;
-  animation: RotationInfinis 5s linear infinite;
 }
 
 #fleurMenuOrchid {
   top: 117px;
   left: -54px;
-  animation: RotationInfinis 5s linear infinite;
 }
 
 #fleurMenuHibiscus {
   bottom: -120px;
   right: -240px;
   width: 30%;
-  animation: RotationInfinis 5s linear infinite;
 }
 
 #fleurMenuRandom {
   top: 400px;
-  right: -80px;
+  right: -40px;
   width: 5%;
-  animation: RotationInfinis 5s linear infinite;
 }
 
 #fleurMenuFlower {
@@ -188,14 +183,6 @@ $background-color: black;
   left: 230px;
   width: 80px;
   height: 80px;
-  animation: RotationInfinis 5s linear infinite;
-}
-
-// Animation Flottement des chats
-#catMenuBlack,
-#catMenuOrange,
-#catMenuBleu {
-  animation: flottementChat 3s infinite alternate;
 }
 
 // media querie images
