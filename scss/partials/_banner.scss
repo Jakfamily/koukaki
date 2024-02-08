@@ -12,7 +12,11 @@
     width: 100% !important;
     z-index: -2;
     margin-top: 0px !important;
-    display: block;
+    display: none;
+
+    @media (max-width: 700px) {
+      display: block;
+    }
   }
 
   &__parallaxe-logo {
@@ -24,14 +28,14 @@
     margin-top: 10px !important;
 
     @media (max-width: 700px) {
-        position: absolute;
-        top: 50px;
-        left: 50%;
-        width: 40% !important;
-        z-index: -1;
-        margin-left: -20%;
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      width: 40% !important;
+      z-index: -1;
+      margin-left: -20%;
     }
-}
+  }
 
   &__video {
     position: absolute;

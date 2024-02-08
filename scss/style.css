@@ -449,7 +449,12 @@
   width: 100% !important;
   z-index: -2;
   margin-top: 0px !important;
-  display: block;
+  display: none;
+}
+@media (max-width: 700px) {
+  .banner__video-fallback {
+    display: block;
+  }
 }
 .banner__parallaxe-logo {
   width: 80% !important;

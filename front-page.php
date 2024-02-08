@@ -7,8 +7,9 @@ get_header();
     <section class="banner">
         <video class="banner__video" autoplay muted loop poster="<?php echo get_template_directory_uri() . '/assets/images/banner.png'; ?>">
             <source src="<?php echo get_stylesheet_directory_uri() . '/assets/videos/Koukaki_video.mp4'; ?>" type="video/mp4">
-            <img class='banner__video-fallback' src="<?php echo get_template_directory_uri() . '/assets/images/banner.png'; ?> " alt="logo  de : Fleurs d'oranger et chats errants">
         </video>
+
+        <img class='banner__video-fallback' src="<?php echo get_template_directory_uri() . '/assets/images/banner.png'; ?> " alt="logo  de : Fleurs d'oranger et chats errants">
 
         <div class="banner__parallaxe">
             <img class="banner__parallaxe-logo" src="<?= get_template_directory_uri() . '/assets/images/logo.png'; ?>" alt="logo Fleurs d'oranger & chats errants">
