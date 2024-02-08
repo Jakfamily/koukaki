@@ -1,6 +1,8 @@
-/* CSS pour le menu burger */
-
 $background-color: black;
+
+body.nav_open {
+  overflow: hidden;
+}
 
 .MenuFull {
   background-color: #fff5e9;
@@ -10,7 +12,6 @@ $background-color: black;
   &.nav_open {
     opacity: 1;
     height: 100vh;
-
     visibility: visible;
     display: block;
     transition: opacity 0.5s ease-in, height 0.5s ease-in;

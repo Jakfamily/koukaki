@@ -2,7 +2,7 @@
   width: 25%;
 }
 
-.oscar__nomination-text{
+.oscar__nomination-text {
   background-image: url("http://localhost/koukaki/wp-content/themes/foce/assets/images/orange_characters_bg");
   font-size: 35px !important;
 }
@@ -15,7 +15,8 @@
   align-items: center;
 }
 
-.oscar::before, .oscar::after {
+.oscar::before,
+.oscar::after {
   content: "";
   background-size: cover;
   position: absolute;
@@ -24,7 +25,7 @@
 }
 
 .oscar::before {
-  background-image: url("http://localhost/koukaki/wp-content/themes/foce/assets/images/Sunflower.png");
+  background-image: url("/assets/images/Sunflower.png");
   left: -144px;
   top: -96px;
 }
@@ -36,22 +37,19 @@
 }
 
 @media (max-width: 1100px) {
-
-    .oscar__nomination-text {
-		  font-size: 152%;
-		}
+  .oscar__nomination-text {
+    font-size: 152%;
   }
+}
 
 @media (max-width: 900px) {
-
-    .oscar__nomination-text {
-		  font-size: 122%;
-		}
+  .oscar__nomination-text {
+    font-size: 122%;
   }
+}
 
 @media (max-width: 580px) {
-
-    .oscar__nomination-text {
-		  font-size: 110%;
-		}
+  .oscar__nomination-text {
+    font-size: 110%;
   }
+}

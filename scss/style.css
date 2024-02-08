@@ -497,13 +497,13 @@
   width: 1440px;
   max-width: 100%;
 }
-.swiper__slide {
+.swiper-slide {
   background-position: center;
   background-size: cover;
-  margin-right: 40px;
-  margin-left: 40px;
+  margin-right: 40px !important;
+  margin-left: 40px !important;
 }
-.swiper__slide img {
+.swiper-slide img {
   display: block;
   max-width: 380px;
 }
@@ -552,7 +552,10 @@
     display: none;
   }
 }
-/* CSS pour le menu burger */
+body.nav_open {
+  overflow: hidden;
+}
+
 .MenuFull {
   background-color: #fff5e9;
   opacity: 0;
@@ -787,7 +790,8 @@
           align-items: center;
 }
 
-.oscar::before, .oscar::after {
+.oscar::before,
+.oscar::after {
   content: "";
   background-size: cover;
   position: absolute;
@@ -796,7 +800,7 @@
 }
 
 .oscar::before {
-  background-image: url("http://localhost/koukaki/wp-content/themes/foce/assets/images/Sunflower.png");
+  background-image: url("/assets/images/Sunflower.png");
   left: -144px;
   top: -96px;
 }

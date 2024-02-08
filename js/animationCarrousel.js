@@ -11,7 +11,7 @@ const swiper = new Swiper(".swiper", {
   effect: "coverflow",
   grabcursor: true,
   centeredSlides: true,
-  slidesPerView: "auto",
+  slidesPerView: "3",
   direction: "horizontal",
   spaceBetween: 70,
 

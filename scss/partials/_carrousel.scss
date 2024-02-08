@@ -5,11 +5,11 @@
   width: 1440px;
   max-width: 100%;
 
-  &__slide {
+  &-slide {
     background-position: center;
     background-size: cover;
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: 40px !important;
+    margin-left: 40px !important;
 
     img {
       display: block;

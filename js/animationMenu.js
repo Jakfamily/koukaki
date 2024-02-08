@@ -1,7 +1,20 @@
-//console.log(" Message dans la console, pour vérifier que le JavaScript est fonctionnel ")
-console.log(
-  " le script javascript lancé se nomme menu_burger.js et il est fonctionnel "
-);
+/*
+Sélection des éléments du DOM :
+boutonMenu: Sélectionne l'élément du DOM avec la classe ".boutonMenu".
+burger: Sélectionne l'élément du DOM avec la classe ".MenuFull".
+menuLinks: Sélectionne tous les liens <a> à l'intérieur des éléments <li> de la liste <ul> dans ".MenuFull".
+
+Fonction toggleMenu :
+Cette fonction bascule l'état de la classe "nav_open" pour l'élément ".MenuFull" et de la classe "active" pour l'élément ".boutonMenu".
+
+Gestion de l'ouverture du menu :
+Ajoute un écouteur d'événements sur le clic du bouton ".boutonMenu" pour appeler la fonction toggleMenu.
+
+Gestion de la fermeture du menu au clic sur un lien :
+Ajoute des écouteurs d'événements sur chaque lien dans ".MenuFull" pour retirer les classes "nav_open" et "active" et fermer le menu lorsqu'un lien est cliqué.
+*/
+
+console.log("allo la terre ici animationMenu.js en dirrect de la lune");
 
 // Sélection des éléments du DOM
 const boutonMenu = document.querySelector(".boutonMenu");
@@ -12,6 +25,11 @@ const menuLinks = document.querySelectorAll(".MenuFull ul li a");
 const toggleMenu = () => {
   burger.classList.toggle("nav_open");
   boutonMenu.classList.toggle("active");
+
+  // Empêche le défilement du corps lorsque le menu est ouvert
+  document.body.style.overflow = burger.classList.contains("nav_open")
+    ? "hidden"
+    : "auto";
 };
 
 // Gestion de l'ouverture du menu au clic sur le bouton
