@@ -1,9 +1,13 @@
+$cheminImageSunflower: "../assets/images/Sunflower.png";
+$cheminImageOrchid: "../assets/images/orchid.png";
+$cheminImagePlace: "../assets/images/orange_characters_bg.png";
+
 .oscar__nomination-img {
   width: 25%;
 }
 
 .oscar__nomination-text {
-  background-image: url("http://localhost/koukaki/wp-content/themes/foce/assets/images/orange_characters_bg");
+  background-image: url($cheminImagePlace);
   font-size: 35px !important;
 }
 
@@ -25,13 +29,13 @@
 }
 
 .oscar::before {
-  background-image: url("/assets/images/Sunflower.png");
+  background-image: url($cheminImageSunflower);
   left: -144px;
   top: -96px;
 }
 
 .oscar::after {
-  background-image: url("http://localhost/koukaki/wp-content/themes/foce/assets/images/orchid.png");
+  background-image: url($cheminImageOrchid);
   right: -210px;
   top: -128px;
 }

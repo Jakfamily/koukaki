@@ -1,5 +1,7 @@
+$chemincloud: "../assets/images/Studio_Koukaki-image_place.png";
+
 .story #place {
-  background-image: url("http://localhost/koukaki/wp-content/themes/foce/assets/images/Studio_Koukaki-image_place.png");
+  background-image: url($chemincloud);
 }
 
 #NuagesBleu {
