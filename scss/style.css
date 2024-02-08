@@ -557,6 +557,10 @@ body.nav_open {
   overflow: hidden;
 }
 
+.site-title {
+  margin-left: 100px;
+}
+
 .MenuFull {
   background-color: #fff5e9;
   opacity: 0;
