@@ -16,9 +16,13 @@
 
         <header id="masthead" class="site-header">
             <nav id="site-navigation" class="main-navigation">
+
                 <div class="boutonMenu">
                     <span> </span>
                 </div>
+                <ul>
+                    <li class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></li>
+                </ul>
             </nav>
 
             <section class="menu-items MenuFull">
@@ -37,7 +41,9 @@
                         <li><a href="#story"><span class="Animetitre">Histoire</span></a></li>
                         <li><a href="#characters"><span class="Animetitre">Personnages</span></a></li>
                         <li><a href="#place"><span class="Animetitre">Lieu</span></a></li>
-                        <li><a href="#studio"><KOUKAKI class="Animetitre">Studio KOUKAKI</a></li>
+                        <li><a href="#studio">
+                                <KOUKAKI class="Animetitre">Studio KOUKAKI
+                            </a></li>
                     </ul>
                     <p class="menuParagraphe">STUDIO KOUKAKI</p>
                 </div>
@@ -45,4 +51,5 @@
         </header>
     </div>
 </body>
+
 </html>
