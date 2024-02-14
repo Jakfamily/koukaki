@@ -14,6 +14,7 @@ body.nav_open {
   transition: opacity 0.5s ease-in, height 0.5s ease-in;
 
   &.nav_open {
+    @include keyFrames(100vh, fadeIn, 100%);
     opacity: 1;
     height: 100vh;
     visibility: visible;
@@ -96,6 +97,7 @@ body.nav_open {
 
   li {
     text-align: center;
+    list-style: none;
   }
 
   li a {
@@ -104,7 +106,6 @@ body.nav_open {
     font-size: 45px;
     font-weight: bold;
     line-height: 104px;
-    // mise en place de l'ombre portée
     &:hover {
       filter: drop-shadow(0px 0px 10px #d35d19);
       -webkit-filter: drop;

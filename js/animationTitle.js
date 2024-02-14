@@ -29,7 +29,10 @@ sections.forEach((section) => {
 const observer2 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add("animateTitle2");
+      // Utilisation de setTimeout pour ajouter la classe après 0.5 seconde
+      setTimeout(() => {
+        entry.target.classList.add("animateTitle2");
+      }, 500);
     } else {
       entry.target.classList.remove("animateTitle2");
     }

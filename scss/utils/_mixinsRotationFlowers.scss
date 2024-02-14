@@ -1,8 +1,17 @@
+// Définition d'un mixin nommé rotationFleurs avec un paramètre $vitesse
 @mixin rotationFleurs($vitesse) {
+  // Définition de l'animation keyframes nommée RotationFleurs
   @keyframes RotationFleurs {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+      // À 0%, l'élément est tourné de 0 degrés
+      transform: rotate(0deg);
+    }
+    100% {
+      // À 100%, l'élément est tourné de 360 degrés (un tour complet)
+      transform: rotate(360deg);
+    }
   }
 
+  // Appliquer l'animation RotationFleurs avec la vitesse spécifiée, une temporisation linéaire et en boucle infinie
   animation: RotationFleurs $vitesse linear infinite;
 }

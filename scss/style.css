@@ -377,13 +377,13 @@
 }
 
 .animateTitle {
-  -webkit-animation: fadeInUp 2s;
-          animation: fadeInUp 2s;
+  -webkit-animation: fadeInDown 2s;
+          animation: fadeInDown 2s;
 }
-@-webkit-keyframes fadeInUp {
+@-webkit-keyframes fadeInDown {
   0% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
     opacity: 0;
   }
   100% {
@@ -392,10 +392,10 @@
     opacity: 1;
   }
 }
-@keyframes fadeInUp {
+@keyframes fadeInDown {
   0% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
     opacity: 0;
   }
   100% {
@@ -408,18 +408,6 @@
 .animateTitle2 {
   -webkit-animation: fadeInDown 2s;
           animation: fadeInDown 2s;
-}
-@-webkit-keyframes fadeInDown {
-  0% {
-    -webkit-transform: translateY(100px);
-            transform: translateY(100px);
-    opacity: 0;
-  }
-  200% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
 }
 @keyframes fadeInDown {
   0% {
@@ -453,7 +441,9 @@
 }
 @media (max-width: 700px) {
   .banner__video-fallback {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 .banner__parallaxe-logo {
@@ -486,7 +476,7 @@
 }
 @media (max-width: 700px) {
   .banner__video {
-    display: block !important;
+    display: none !important;
   }
 }
 @media (max-width: 700px) {
@@ -573,6 +563,8 @@ body.nav_open {
   transition: opacity 0.5s ease-in, height 0.5s ease-in;
 }
 .MenuFull.nav_open {
+  -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
   opacity: 1;
   height: 100vh;
   visibility: visible;
@@ -581,6 +573,30 @@ body.nav_open {
   transition: opacity 0.5s ease-in, height 0.5s ease-in;
   width: 100%;
   overflow: hidden;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    -webkit-transform: translateY(100vh);
+            transform: translateY(100vh);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    -webkit-transform: translateY(100vh);
+            transform: translateY(100vh);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .boutonMenu {
@@ -661,6 +677,7 @@ body.nav_open {
 }
 .liste li {
   text-align: center;
+  list-style: none;
 }
 .liste li a {
   text-decoration: none !important;

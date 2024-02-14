@@ -1,18 +1,27 @@
+// Définition d'un mixin nommé floatLogo avec une durée par défaut de 3 secondes
 @mixin floatLogo($duration: 3s) {
+  // Définition de l'animation keyframes nommée floatLogo
   @keyframes floatLogo {
-    0%, 50%, 100% {
+    0%,
+    50%,
+    100% {
+      // À 0%, 50%, et 100%, l'élément reste à sa position d'origine
       transform: translate(0, 0);
     }
     20% {
+      // À 20%, l'élément se déplace vers la droite (60px) et vers le haut (-30px)
       transform: translate(60px, -30px);
     }
     40% {
+      // À 40%, l'élément se déplace vers la droite (20px) et vers le haut (-50px)
       transform: translate(20px, -50px);
     }
     80% {
+      // À 80%, l'élément se déplace vers la droite (40px) et vers le haut (-80px)
       transform: translate(40px, -80px);
     }
   }
 
+  // Appliquer l'animation floatLogo avec la durée spécifiée, une temporisation linéaire et en boucle infinie
   animation: floatLogo $duration linear infinite;
 }

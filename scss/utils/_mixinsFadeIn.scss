@@ -1,14 +1,20 @@
+// Définition d'un mixin nommé keyFrames avec les paramètres $height, $keyFrameName, $percentage, et une vitesse par défaut de 2 secondes
 @mixin keyFrames($height, $keyFrameName, $percentage, $speed: 2s) {
+  // Définition de l'animation keyframes dynamiquement nommée avec le paramètre $keyFrameName
   @keyframes #{$keyFrameName} {
     0% {
+      // À 0%, l'élément est déplacé vers le bas de la hauteur spécifiée ($height) et son opacité est réglée sur 0
       transform: translateY($height);
       opacity: 0;
     }
 
     #{$percentage} {
+      // À un pourcentage spécifié, l'élément est déplacé vers le haut (0) et son opacité est réglée sur 1
       transform: translateY(0);
       opacity: 1;
     }
   }
+
+  // Appliquer l'animation dynamiquement nommée avec le paramètre $keyFrameName et la vitesse spécifiée
   animation: $keyFrameName $speed;
 }

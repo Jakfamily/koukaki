@@ -1,12 +1,18 @@
+// Définition d'un mixin nommé floatCat avec une durée par défaut de 3 secondes
 @mixin floatCat($duration: 3s) {
+  // Définition de l'animation keyframes nommée floatCat
   @keyframes floatCat {
-    0%, 100% {
+    0%,
+    100% {
+      // À 0% et 100%, l'élément est déplacé vers le haut de 10 pixels
       transform: translateY(-10px);
     }
     50% {
+      // À 50%, l'élément est déplacé vers le bas de 10 pixels
       transform: translateY(10px);
     }
   }
 
+  // Appliquer l'animation floatCat avec la durée spécifiée, une temporisation linéaire et en boucle infinie
   animation: floatCat $duration linear infinite;
 }
